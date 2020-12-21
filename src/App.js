@@ -6,8 +6,14 @@ import Player from './THEOplayerWrapper'
 function App() {
 	let source = {
         sources: [{
-            src: "//cdn.theoplayer.com/video/elephants-dream/playlist.m3u8",
-            type: "application/x-mpegurl"
+            "src": "https://d1n93qtmcsa1om.cloudfront.net/d799fbe8-d2f1-4002-819b-38a43ec2ddde/dash/147fe0bf-60a8-4f23-a826-99b9690c8605.mpd",
+            "type": "application/dash+xml",
+            "contentProtection": {
+                "integration": "ezdrm",
+                "widevine": {
+                    "licenseAcquisitionURL": "https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=A3D13A"
+                }
+            }
         }]
     };
     return ( 
