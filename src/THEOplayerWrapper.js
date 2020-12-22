@@ -12,9 +12,8 @@ class Player extends React.Component {
 
         if (this._el.current) {
             this._player = new window.THEOplayer.Player(this._el.current, {
-                libraryLocation: "https://cdn.myth.theoplayer.com/7aff3fa6-f92e-45f9-a40e-1bce9911b073/"
+                libraryLocation: "https://cdn.myth.theoplayer.com/e0f061d2-ca89-4f40-b17e-90f8ffdadacf"
             });
-
             this._player.source = source;
             this._player.addEventListener('play', onPlay)
         }
